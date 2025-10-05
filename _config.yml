@@ -1,6 +1,75 @@
-title: "Sri Harsha Koppu"
-name: "Sri Harsha Koppu"
-description: "DevOps & Cloud Engineer | AWS | Kubernetes | CI/CD | Security"
-url: "https://Harshacric945.github.io"
-github_username: Harshacric945
-linkedin_username: sriharshakoppu945
+# Theme
+minimal_mistakes_skin    : "default"
+
+# Site Settings
+locale                   : "en-US"
+title                    : "Sri Harsha Koppu"
+title_separator          : "-"
+subtitle                 : "DevOps & Cloud Engineer | AWS | Kubernetes | CI/CD"
+name                     : "Sri Harsha Koppu"
+description              : "Portfolio and blog showcasing my DevOps and Cloud projects."
+url                      : "https://Harshacric945.github.io"
+repository               : "Harshacric945/Harshacric945.github.io"
+
+# Author (sidebar profile)
+author:
+  name             : "Sri Harsha Koppu"
+  avatar           : "/assets/images/bio-photo.jpg" # optional, add your photo here
+  bio              : "DevOps & Cloud Engineer | AWS | Kubernetes | CI/CD | Security-first automation"
+  location         : "Hyderabad, India"
+  email            : "sriharshakoppu945@gmail.com"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Harshacric945"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/sriharshakoppu945/"
+    - label: "Resume"
+      icon: "fas fa-fw fa-file"
+      url: "/assets/resume.pdf" # optional, upload later
+
+# Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Harshacric945"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/sriharshakoppu945/"
+
+# Navigation Bar
+# Create _data/navigation.yml for cleaner nav, but inline works too:
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
+
+# Collections (for Projects section)
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
