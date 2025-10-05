@@ -1,23 +1,24 @@
 # Theme
-minimal_mistakes_skin    : "default"
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Sri Harsha Koppu"
-title_separator          : "-"
-subtitle                 : "DevOps & Cloud Engineer | AWS | Kubernetes | CI/CD"
-name                     : "Sri Harsha Koppu"
-description              : "Portfolio and blog showcasing my DevOps and Cloud projects."
-url                      : "https://Harshacric945.github.io"
-repository               : "Harshacric945/Harshacric945.github.io"
+locale: "en-US"
+title: "Sri Harsha Koppu"
+title_separator: "-"
+subtitle: "DevOps & Cloud Engineer | AWS | Kubernetes | CI/CD"
+name: "Sri Harsha Koppu"
+description: "Portfolio and blog showcasing my DevOps and Cloud projects."
+url: "https://harshacric945.github.io"
+repository: "Harshacric945/Harshacric945.github.io"
 
 # Author (sidebar profile)
 author:
-  name             : "Sri Harsha Koppu"
-  avatar           : "/assets/images/bio-photo.jpg" # optional, add your photo here
-  bio              : "DevOps & Cloud Engineer | AWS | Kubernetes | CI/CD | Security-first automation"
-  location         : "Hyderabad, India"
-  email            : "sriharshakoppu945@gmail.com"
+  name: "Sri Harsha Koppu"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "DevOps & Cloud Engineer | AWS | Kubernetes | CI/CD | Security-first automation"
+  location: "Hyderabad, India"
+  email: "sriharshakoppu945@gmail.com"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -27,7 +28,7 @@ author:
       url: "https://www.linkedin.com/in/sriharshakoppu945/"
     - label: "Resume"
       icon: "fas fa-fw fa-file"
-      url: "/assets/resume.pdf" # optional, upload later
+      url: "/assets/resume.pdf"
 
 # Footer
 footer:
@@ -39,8 +40,7 @@ footer:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/sriharshakoppu945/"
 
-# Navigation Bar
-# Create _data/navigation.yml for cleaner nav, but inline works too:
+# Defaults
 defaults:
   - scope:
       path: ""
@@ -52,19 +52,11 @@ defaults:
       share: true
       related: true
 
-# Collections (for Projects section)
-collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
-
-# Plugins
+# Plugins (only GitHub Pages supported ones)
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
-  - jekyll-include-cache
 
 # Archives
 category_archive:
