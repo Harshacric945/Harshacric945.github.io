@@ -15,7 +15,6 @@ repository: "Harshacric945/Harshacric945.github.io"
 # Author (sidebar profile)
 author:
   name: "Sri Harsha Koppu"
-  avatar: "/assets/images/bio-photo.jpg"
   bio: "DevOps & Cloud Engineer | AWS | Kubernetes | CI/CD | Security-first automation"
   location: "Hyderabad, India"
   email: "sriharshakoppu945@gmail.com"
@@ -26,9 +25,6 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/sriharshakoppu945/"
-    - label: "Resume"
-      icon: "fas fa-fw fa-file"
-      url: "/assets/resume.pdf"
 
 # Footer
 footer:
@@ -52,11 +48,18 @@ defaults:
       share: true
       related: true
 
+# Collections (for Projects section)
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
 # Plugins (only GitHub Pages supported ones)
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Archives
 category_archive:
@@ -65,3 +68,7 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+# Pagination
+paginate: 5
+paginate_path: /page:num/
